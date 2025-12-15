@@ -1,0 +1,25 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="mt-4 space-y-4">
+  <div>
+    <label for="fullName" class="block text-sm font-medium text-slate-700">Họ tên công dân</label>
+    <input type="text" id="fullName" formControlName="fullName" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+  </div>
+
+  <div>
+    <label for="idNumber" class="block text-sm font-medium text-slate-700">Số CCCD / CMND</label>
+    <input type="text" id="idNumber" formControlName="idNumber" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+  </div>
+
+  <div>
+    <label for="issueDate" class="block text-sm font-medium text-slate-700">Ngày cấp (MM/DD/YYYY)</label>
+    <input type="text" id="issueDate" formControlName="issueDate" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+  </div>
+  
+  <div>
+    <label for="address" class="block text-sm font-medium text-slate-700">Địa chỉ</label>
+    <textarea id="address" formControlName="address" rows="3" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+  </div>
+
+  <button type="submit" class="w-full inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 disabled:bg-slate-400 disabled:cursor-not-allowed transition-all">
+    Lưu dữ liệu
+  </button>
+</form>

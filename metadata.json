@@ -1,0 +1,5 @@
+{
+  "name": "Số hóa hồ sơ OCR",
+  "description": "Một ứng dụng demo để số hóa và bóc tách dữ liệu từ hồ sơ giấy tờ bằng công nghệ OCR, giúp cán bộ hành chính tiết kiệm thời gian và nâng cao hiệu quả công việc.",
+  "requestFramePermissions": []
+}
